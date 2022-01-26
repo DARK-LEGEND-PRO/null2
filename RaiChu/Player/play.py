@@ -265,7 +265,7 @@ async def play(c: Client, m: Message):
             )
         else:
             suhu = await m.reply_text(
-        f"**Florina Downloader**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**Downloading**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
     )
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
