@@ -3,6 +3,7 @@ from time import time
 from datetime import datetime
 from RaiChu.config import BOT_USERNAME, OWNER_USERNAME, START_PIC
 from pyrogram import Client, filters
+from Process.filters import command, other_filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
 
