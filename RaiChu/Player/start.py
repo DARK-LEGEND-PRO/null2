@@ -1,10 +1,7 @@
 import asyncio
 from time import time
 from datetime import datetime
-from Music import BOT_USERNAME
-from Music.config import UPDATES_CHANNEL, ZAID_SUPPORT
-from Music.MusicUtilities.helpers.filters import command
-from Music.MusicUtilities.helpers.command import commandpro
+from RaiChu.config import BOT_USERNAME, UPDATES_CHANNEL, ZAID_SUPPORT
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
