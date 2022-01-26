@@ -1,7 +1,7 @@
 import asyncio
 from time import time
 from datetime import datetime
-from RaiChu.config import BOT_USERNAME, UPDATES_CHANNEL, ZAID_SUPPORT
+from RaiChu.config import BOT_USERNAME, OWNER_USERNAME, START_PIC
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
