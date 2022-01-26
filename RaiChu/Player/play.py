@@ -139,10 +139,10 @@ async def play(c: Client, m: Message):
                       InlineKeyboardButton('⏭️', callback_data="skip"),
                       InlineKeyboardButton("▶️", callback_data="cbresume"),
                   ],[
-                      InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/STARZ_BOTS"),
-                      InlineKeyboardButton("• Group", url=f"https://t.me/Starz_Support"),
+                      InlineKeyboardButton("• Cʜᴀɴɴᴇʟ", url=f"https://t.me/Sid_XDZ"),
+                      InlineKeyboardButton("• Group", url=f"https://t.me/girls_boys_chatting_00"),
                   ],[
-                      InlineKeyboardButton("🗑 Close", callback_data="cls")],
+                      InlineKeyboardButton("🗑", callback_data="cls")],
                   ]
              )
     if m.sender_chat:
@@ -254,8 +254,8 @@ async def play(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/STARZ_BOTS"),
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/Starz_Support")
+                            InlineKeyboardButton("📣 Channel", url=f"https://t.me/Sid_XDZ"),
+                            InlineKeyboardButton("💭 Support", url=f"https://t.me/girls_boys_chatting_00")
                         ],
                         [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
