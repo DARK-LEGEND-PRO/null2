@@ -6,6 +6,7 @@ from asyncio.queues import QueueEmpty
 import os
 import random
 import re
+import yt_dlp
 import aiofiles
 import aiohttp
 from RaiChu.converter import convert
