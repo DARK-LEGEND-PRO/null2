@@ -6,7 +6,7 @@ from asyncio.queues import QueueEmpty
 import os
 import random
 import re
-import yt_dlp
+
 import aiofiles
 import aiohttp
 from RaiChu.converter import convert
@@ -25,6 +25,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pytgcalls import StreamType
 from pytgcalls.types.input_stream import AudioPiped
 from youtubesearchpython import VideosSearch
+import yt_dlp as youtube_dl
 
 FOREGROUND_IMG = [
     "Process/ImageFont/Red.png",
