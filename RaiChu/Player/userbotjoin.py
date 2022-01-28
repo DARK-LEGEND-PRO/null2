@@ -2,7 +2,7 @@ import asyncio
 from RaiChu.config import BOT_USERNAME, SUDO_USERS
 from Process.decorators import authorized_users_only, sudo_users_only, errors
 from Process.filters import command, other_filters
-from Process.xmarty import user as USER
+from Process.main import user as USER
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
 
