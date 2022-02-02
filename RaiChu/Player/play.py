@@ -140,8 +140,6 @@ async def play(c: Client, m: Message):
                       InlineKeyboardButton('⏭️', callback_data="skip"),
                       InlineKeyboardButton("▶️", callback_data="cbresume"),
                   ],[
-                      InlineKeyboardButton("• Group", url=f"https://t.me/friends_chat_international_group"),
-                  ],[
                       InlineKeyboardButton("🗑", callback_data="cls")],
                   ]
              )
@@ -254,9 +252,6 @@ async def play(c: Client, m: Message):
                       reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("💭 Support", url=f"https://t.me/friends_chat_international_group")
-                        ],
-                        [
                             InlineKeyboardButton("🗑 Close", callback_data="cls")
                         ]
                     ]
@@ -264,7 +259,7 @@ async def play(c: Client, m: Message):
             )
         else:
             suhu = await m.reply_text(
-        f"**Downloading**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 100%"
+        f"**Downloading**\n\n0% ▓▓▓▓▓▓▓▓▓▓▓▓ 50%"
     )
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
