@@ -45,28 +45,18 @@ def ytsearch(query: str):
         songname = data["title"]
         url = data["link"]
         duration = data["duration"]
-        thumbnail = data["thumbnails"][0]["url"]
+        thumbnail = f"https://i.ytimg.com/vi/{data['id']}/hqdefault.jpg"
         return [songname, url, duration, thumbnail]
     except Exception as e:
         print(e)
         return 0
 
 
-async def ytdl(link: str):
-    stdout, stderr = await bash(
-        f'yt-dlp --geo-bypass -g -f "best[height<=?720][width<=?1280]/best" {link}'
-    )
+async def ytdl(format: str, link: str):
+    stdout, stderr = await bash(f'youtube-dl -g -f "{format}" {link}')
     if stdout:
-        return 1, stdout
+        return 1, stdout.split("\n")[0]
     return 0, stderr
-
-
-def convert_seconds(seconds):
-    seconds = seconds % (24 * 3600)
-    seconds %= 3600
-    minutes = seconds // 60
-    seconds %= 60
-    return "%02d:%02d" % (minutes, seconds)
 
 
 chat_id = None
