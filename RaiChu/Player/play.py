@@ -45,7 +45,7 @@ def ytsearch(query: str):
         songname = data["title"]
         url = data["link"]
         duration = data["duration"]
-        thumbnail = f"https://i.ytimg.com/vi/{data['id']}/hqdefault.jpg"
+        thumbnail = data["thumbnails"][0]["url"]
         return [songname, url, duration, thumbnail]
     except Exception as e:
         print(e)
@@ -55,7 +55,7 @@ def ytsearch(query: str):
 async def ytdl(format: str, link: str):
     stdout, stderr = await bash(f'youtube-dl -g -f "{format}" {link}')
     if stdout:
-        return 1, stdout.split("\n")[0]
+        return 1, stdout
     return 0, stderr
 
 
